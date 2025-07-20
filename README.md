@@ -28,10 +28,10 @@ It connects people with Indian traditions through immersive tours, interactive w
 
 ## 📸 Screenshots
 
-*Add your project screenshots here using:*
+![Homepage Screenshot](images/home.png)
+![Tour Page](images/workshops.png)
+![Shop Section](images/culturaltours.png)
 
-```markdown
-![Screenshot 1](images/home.png)
 
 ````
 
