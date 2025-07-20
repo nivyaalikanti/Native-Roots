@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+}
+
+nav {
+    background-color: #008080; /* Teal Green */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; 
+    padding: 10px 10px;
+    /* background-color: red; */
+    border-radius: 8px;
+
+}
+nav ul li a:hover{
+    background-color: #00bfbf8b;
+}
+header {
+    background-image: url('heritage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.main-section {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+}
+
+.main-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.main-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-buttons .btn {
+    background-color: #ffcc00; /* Golden Yellow */
+    color: #000;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin-right: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #ff9900; /* Darker Golden Yellow */
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.feature-box {
+    text-align: center;
+    width: 20%;
+}
+
+.feature-box img {
+    width: 93%;
+    /* height: ; */
+    border-radius: 10px;
+}
+
+.feature-box h2 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.feature-box p {
+    font-size: 16px;
+}
+
+footer {
+    background-color: #008080;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+#loginbtn{
+    background-color: white;
+    color:#006666;
+    font-weight: bold;
+}
+#loginbtn:hover{
+    background-color: rgb(231, 232, 231);
+}
+#signupbtn{
+    background-color: white;
+    color:#006666;
+    font-weight:bold;
+}
+#signupbtn:hover{
+    background-color: rgb(231, 232, 231);
+}

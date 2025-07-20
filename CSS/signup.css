@@ -1,0 +1,160 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #008080; /* Teal Green */
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+
+nav ul li a:hover {
+    background-color: #019595f1;
+}
+
+/* Sign Up Section */
+#signup {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#signup h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #2A4D69; /* Teal Green */
+    margin-bottom: 30px;
+}
+
+form label {
+    font-size: 16px;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+form input {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #008080; /* Teal Green */
+    box-shadow: 0 0 5px #008080;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #008080; /* Teal Green */
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+button[type="submit"]:hover {
+    background-color: #006666; /* Darker Teal Green */
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p a {
+    color: #008080;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #555;
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #signup {
+        padding: 20px;
+    }
+
+    #signup h2 {
+        font-size: 28px;
+    }
+
+    form input {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+    }
+}
+#loginbtn{
+    background-color: white;
+    color:#006666;
+    font-weight: bold;
+}
+#loginbtn:hover{
+    background-color: rgb(231, 232, 231);
+}
+#signupbtn{
+    background-color: white;
+    color:#006666;
+    font-weight:bold;
+}
+#signupbtn:hover{
+    background-color: rgb(231, 232, 231);
+}

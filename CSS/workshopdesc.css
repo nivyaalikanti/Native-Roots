@@ -1,0 +1,213 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+}
+
+nav {
+    background-color: #008080; /* Teal Green */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 10px;
+    /* background-color: red; */
+    border-radius: 8px;
+}
+nav ul li a:hover{
+    background-color: #00bfbf8b;
+}
+
+header {
+    background-image: url('heritage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+#loginbtn{
+    background-color: white;
+    color:#006666;
+    font-weight: bold;
+}
+#loginbtn:hover{
+    background-color: rgb(231, 232, 231);
+}
+#signupbtn{
+    background-color: white;
+    color:#006666;
+    font-weight:bold;
+}
+#signupbtn:hover{
+    background-color: rgb(231, 232, 231);
+}
+/* Workshops Page Styles */
+.workshops-container {
+    padding: 2em;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.location-form {
+    margin-bottom: 2em;
+}
+
+.location-form select {
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Workshop Grid */
+.workshop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    padding: 1em;
+}
+
+.workshop-item {
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.workshop-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.workshop-item img {
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.workshop-item p {
+    font-size: 1em;
+    margin: 0.5em 0;
+}
+
+.back-btn {
+    background-color: #006666;
+    color: white;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+.back-btn a{
+    color:white;
+    text-decoration: none;
+}
+
+.register-btn:hover {
+    background-color: #027d7d;
+}
+
+/* Individual Workshop Details Page */
+.workshop-details {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.workshop-details h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.workshop-details img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.workshop-details p {
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+.workshop-details .register-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.workshop-details .register-btn:hover {
+    background-color: #0069d9;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .workshop-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .workshop-details {
+        padding: 1.5em;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}

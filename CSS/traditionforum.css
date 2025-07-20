@@ -1,0 +1,314 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/*body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+} */
+ /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+}
+
+nav {
+    background-color: #008080; /* Teal Green */
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 10px;
+    /* background-color: red; */
+    border-radius: 8px;
+}
+nav ul li a:hover{
+    background-color: #00bfbf8b;
+}
+
+header {
+    background-image: url('heritage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+/* Section Titles */
+section h2 {
+    font-size: 2em;
+    color: #006666;
+    text-align: center;
+    margin: 30px 0;
+}
+
+section p {
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Tradition Forum Section */
+#tradition-forum {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+}
+
+.forum-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.forum-card {
+    background-color: #fdf5e6;
+    border: 2px solid #e67e22;
+    border-radius: 8px;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.forum-card h3 {
+    color: #e67e22;
+    margin-bottom: 20px;
+}
+
+.forum-card button {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.forum-card button:hover {
+    background-color: #d35400;
+}
+
+/* Panel Discussions Section */
+#panel-discussions {
+    background-color: #f1f1f3;
+    padding: 40px;
+    text-align: center;
+}
+
+.panel-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.panel-card {
+    background-color: #ffffff;
+    /* border: 2px solid #006666; */
+    border-radius: 8px;
+    width: 40%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.panel-card h3 {
+    color: #006666;
+    margin-bottom: 20px;
+}
+
+.panel-card button {
+    background-color: #006666;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.panel-card button:hover {
+    background-color: #008686;
+}
+
+/* Surveys Section */
+#surveys {
+    background-color: #f1f1f3;
+    padding: 40px;
+    text-align: center;
+}
+
+.survey-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.survey-card {
+    background-color: white;
+    /* border: 2px solid #16a085; */
+    border-radius: 8px;
+    width: 40%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.survey-card h3 {
+    color: #006666;
+    margin-bottom: 20px;
+}
+
+.survey-card button {
+    background-color: #006666;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.survey-card button:hover {
+    background-color: #13856b;
+}
+
+/* Digital Libraries Section */
+#digital-libraries {
+    background-color: #f1f1f3;
+    padding: 40px;
+    text-align: center;
+}
+
+.library-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.library-card {
+    background-color: white;
+    /* border: 2px solid #2980b9; */
+    border-radius: 8px;
+    width: 40%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.library-card h3 {
+    color: #006666;
+    margin-bottom: 20px;
+}
+
+.library-card button {
+    background-color: #006666;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.library-card button:hover {
+    background-color: #028080;
+}
+
+/* Footer */
+footer {
+    background-color: #006666;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .forum-card, .panel-card, .survey-card, .library-card {
+        width: 80%;
+    }
+}
+#loginbtn{
+    background-color: white;
+    color:#006666;
+    font-weight: bold;
+}
+#loginbtn:hover{
+    background-color: rgb(231, 232, 231);
+}
+#signupbtn{
+    background-color: white;
+    color:#006666;
+    font-weight:bold;
+}
+#signupbtn:hover{
+    background-color: rgb(231, 232, 231);
+}
+.library-card button a{
+    text-decoration: none;
+    color:white;
+}

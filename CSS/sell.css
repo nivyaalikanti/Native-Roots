@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* Navigation Bar */
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+}
+
+nav {
+    background-color: #008080; /* Teal Green */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 10px;
+    /* background-color: red; */
+    border-radius: 8px;
+}
+nav ul li a:hover{
+    background-color: #00bfbf8b;
+}
+
+header {
+    background-image: url('heritage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+nav ul li a:hover {
+    background-color: #09a29d;
+}
+#loginbtn{
+    background-color: white;
+    color:#006666;
+    font-weight: bold;
+}
+#loginbtn:hover{
+    background-color: rgb(231, 232, 231);
+}
+#signupbtn{
+    background-color: white;
+    color:#006666;
+    font-weight:bold;
+}
+#signupbtn:hover{
+    background-color: rgb(231, 232, 231);
+}
+
+/* Sell Container */
+.sell-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 83vh;
+}
+
+/* Sell Box */
+.sell-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.sell-box h2 {
+    margin-bottom: 20px;
+    color: #006666;
+}
+
+/* Form inside Sell Box */
+#sell-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#sell-form input, #sell-form textarea, #sell-form button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* File input styling */
+#sell-form input[type="file"] {
+    padding: 3px;
+}
+
+/* Button Styling */
+#sell-form button {
+    background-color: #006666;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#sell-form button:hover {
+    background-color: #028383;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
