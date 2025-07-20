@@ -23,30 +23,31 @@ It connects people with Indian traditions through immersive tours, interactive w
 
 ## 📂 Tech Stack
 
-- HTML, CSS, JavaScript  
+- HTML  
+- CSS  
+- JavaScript  
+
 ---
 
 ## 📸 Screenshots
 
+### 🏠 Home Page
 ![Homepage Screenshot](images/home.png)
-![Tour Page](images/workshops.png)
-![Shop Section](images/culturaltours.png)
 
+### 🛠️ Workshops Page
+![Workshops Screenshot](images/workshops.png)
 
-````
+### 🏞️ Cultural Tours Section
+![Cultural Tours Screenshot](images/culturaltours.png)
 
 ---
 
 ## 🔧 How to Run Locally
 
-1. Clone the repository:
+Clone the repository:
 
-   ```bash
-   git clone https://github.com/your-username/Native-Roots.git
-   ```
+```bash
+git clone https://github.com/your-username/Native-Roots.git
 
-2. Open `index.html` in your browser
-
----
-
-
+Then open the project folder, and double-click on index.html to view it in your browser.
+Alternatively, use a Live Server extension in VS Code for a smoother development experience.
