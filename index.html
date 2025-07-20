@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Culture and Heritage</title>
+    <link rel="stylesheet" href="../CSS/indexes.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav>
+        <div class="logo">Native Roots</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="HTML/marketplace.html">Store</a></li>
+            <li><a href="HTML/workshops.html">Workshops</a></li>
+            <li><a href="HTML/cultural-tours.html">Cultural Tours</a></li>
+            <li><a href="HTML/games.html">Games</a></li>
+            <li><a href="HTML/traditionforum.html">Tradition Forum</a></li>
+            
+            <li><a href="HTML/login.html" id="loginbtn">Login</a></li>
+            <li><a href="HTML/signup.html" id="signupbtn">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <!-- Slideshow Section -->
+    <section id="slideshow">
+        <div class="slides">
+            <div class="slide fade">
+                <img src="https://abirpothi.com/wp-content/uploads/2023/10/Pic-1-Cultural-Heritage-of-India.jpg"
+                    alt="Cultural Image 1" width="100%" height="430px">
+            </div>
+            <div class="slide fade">
+                <img src="https://knowindia.india.gov.in/assets/images/gallery/culture-and-heritage/10.jpg" alt="Cultural Image 2"
+                    width="100%" height="450px">
+            </div>
+            <div class="slide fade">
+                <img src="https://assets.telegraphindia.com/telegraph/2021/Nov/1635762900_untitled-design-4.jpg"
+                    alt="Cultural Image 3" width="100%" height="430px">
+            </div>
+            <div class="slide fade">
+                <img src="https://kashiyatra.in/wp-content/uploads/2023/10/assi-ghat-ganga-aarti.jpeg"
+                    alt="Diwali Celebration" width="100%" height="430px">
+            </div>
+            <div class="slide fade">
+                <img src="https://wd-image.webdunia.com/image-conversion/process-aws.php?url=https://nonprod-media.webdunia.com/public_html/_media/hi/img/article/2019-07/03/full/1562144799-9841.jpg&w=&h=&outtype=webp"
+                    alt="Cultural Image 5" width="100%" height="430px">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sentimental Quote -->
+    <section class="quote">
+        <p>"India is not just a piece of land; it's a feeling, an emotion, a heritage that flows through our hearts."
+        </p>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-box">
+            <h2>Workshops</h2>
+            <img src="https://imgmedia.lbb.in/media/2019/12/5deeff40b5de36e6f926197d_1575944000050.jpg?w=1200&h=628&fill=blur&fit=fill" alt="" width="150px" height="150px">
+               
+            <p>Participate in traditional art, music, dance, and literature workshops.</p>
+            <a href="workshops.html">Learn more</a>
+        </div>
+        <div class="feature-box">
+            <h2>Cultural Tours</h2>
+            <img src="https://heritage-india.com/wp-content/uploads/2022/02/Untitled-design-2022-02-17T123747.685.png"
+                alt="Cultural Tours" width="150px" height="150px">
+            <p>Explore India’s cultural landmarks, local markets, festivals, and more.</p>
+            <a href="cultural-tours.html">Learn more</a>
+        </div>
+        <div class="feature-box">
+            <h2>Games</h2>
+            <img src="https://tweakindia.com/wp-content/uploads/2021/01/Screenshot-2021-01-07-at-9.54.20-PM.png"
+                alt="Games" width="150px" height="150px">
+            <p>Play traditional Indian games and quizzes to test your knowledge.</p>
+            <a href="games.html">Learn more</a>
+        </div>
+        <div class="feature-box">
+            <h2>Tradition Forum</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjiv3df0J3vPtnwM8hYdyXuKhD7HMjtrjIMA&s"
+                alt="Tradition Forum" width="150px" height="150px">
+
+            <p>Engage in cultural discussions and learn from others in our community.</p>
+            <a href="traditionforum.html">Learn more</a>
+        </div>
+    </section>
+    <hr>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Explore India. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Slideshow -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+    </script>
+    <div class="notification-container">
+        <div class="notification-icon" onclick="toggleNotifications()">
+            🔔
+            <span class="notification-badge" id="notification-badge">3</span>
+        </div>
+        <div class="notification-popup" id="notification-popup">
+            <ul id="notification-list">
+                <li>New cultural event nearby!</li>
+                <li>Reminder: Your workshop starts in 30 minutes.</li>
+                <li>Check out the latest travel deals.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function toggleNotifications() {
+            const popup = document.getElementById('notification-popup');
+            popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+        }
+        </script>
+        
+    
+</body>
+
+</html>
