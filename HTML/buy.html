@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #008080;
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+
+        #products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .product-card h3 {
+            margin: 10px 0;
+            color: #008080;
+        }
+
+        .product-card p {
+            margin: 5px 0;
+        }
+
+        .product-card p strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unique Products</h1>
+    <div id="products-container">
+        <!-- Products will be displayed here -->
+         
+    </div>
+    <script>
+        let products = JSON.parse(localStorage.getItem('products')) || [];
+        let container = document.querySelector('#products-container');
+
+        if (products.length === 0) {
+            container.textContent = 'No products listed yet!';
+        } else {
+            
+            products.forEach((product) => {
+                let productDiv = document.createElement('div');
+                productDiv.className = 'product-card';
+
+                productDiv.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}">
+                    <h3>${product.name}</h3>
+                    <p> $${product.price}</p>
+                    <p> ${product.description}</p>
+                `;
+
+                container.appendChild(productDiv);
+            });
+        }
+        
+    </script>
+</body>
+</html>

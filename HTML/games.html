@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamification - Explore India</title>
+    <link rel="stylesheet" href="../CSS/games.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Native Roots</div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="marketplace.html">Store</a></li>
+            <li><a href="workshops.html">Workshops</a></li>
+            <li><a href="cultural-tours.html">Cultural Tours</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="traditionforum.html">Tradition Forum</a></li>
+            
+            <li><a href="login.html" id="loginbtn">Login</a></li>
+            <li><a href="signup.html" id="signupbtn">Signup</a></li>
+        </ul>
+    </nav>
+    <div class="gamification-container">
+        <h1>Gamification</h1>
+        
+        <div class="section">
+            <h2>Quizzes</h2>
+            <div class="quiz-container">
+                <div class="quiz-item">
+                    <h3>Indian Mythology Quiz</h3>
+                    <p>Test your knowledge about the rich mythology of India with this quiz.</p>
+                    <!-- <button class="start-btn">Start Quiz</button> -->
+                    <button class="start-btn" onclick="window.location.href='quiz.html'">Start Quiz</button>
+
+                </div>
+                <!-- Add more quizzes as needed -->
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Daily Challenge</h2>
+            <div class="daily-challenge">
+                <p><strong>Today's Challenge:</strong> Answer this question to earn points!</p>
+                <p><em>What is the significance of the Bhagavad Gita in Hindu mythology?</em></p>
+                <textarea placeholder="Describe your answer" required id="area" rows="10" colums="500"></textarea>
+                <button class="answer-btn">Submit Answer</button>
+                <p class="challenge-info">You will receive a new challenge every day at midnight.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Do You Know?</h2>
+            <div class="facts-container">
+                <div class="fact-item">
+                    <h3>Mythological Fact</h3>
+                    <p><strong>Did you know?</strong> The epic Mahabharata contains the world's longest poem, which is over 100,000 verses long.</p>
+                </div>
+                <div class="fact-item">
+                    <h3>Cultural Fact</h3>
+                    <p><strong>Did you know?</strong> The festival of Diwali, known as the Festival of Lights, symbolizes the victory of light over darkness.</p>
+                </div>
+                <!-- Add more facts as needed -->
+            </div>
+        </div>
+    </div>
+</body>

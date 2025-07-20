@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Products</title>
+    <link rel="stylesheet" href="../CSS/sell.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Native Roots</div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="marketplace.html">Store</a></li>
+            <li><a href="workshops.html">Workshops</a></li>
+            <li><a href="cultural-tours.html">Cultural Tours</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="traditionforum.html">Tradition Forum</a></li>
+            
+            <li><a href="login.html" id="loginbtn">Login</a></li>
+            <li><a href="signup.html" id="signupbtn">Signup</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sell Section -->
+    <div class="sell-container">
+        <div class="sell-box">
+            <h2>Sell Your Products</h2>
+            <form id="sell-form">
+                <input id="product-name" type="text" placeholder="Product Name" required>
+                <input id="product-price" type="number" placeholder="Price" required>
+                <textarea id="product-description" placeholder="Product Description" required></textarea>
+                <input id="product-image" type="file" accept="image/*" required>
+                <button type="button" onclick="addProduct()">List Item</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Indian Culture Project | Marketplace</p>
+    </footer>
+
+    <script>
+        function addProduct() {
+            const name = document.getElementById('product-name').value;
+            const price = document.getElementById('product-price').value;
+            const description = document.getElementById('product-description').value;
+            const imageInput = document.getElementById('product-image');
+            
+            if (!name || !price || !description || imageInput.files.length === 0) {
+                alert('Please fill in all fields and upload an image.');
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                const image = e.target.result; // Base64 encoded image
+                
+                const product = { name, price, description, image };
+                let products = JSON.parse(localStorage.getItem('products')) || [];
+                products.push(product);
+                localStorage.setItem('products', JSON.stringify(products));
+
+                alert('Your product is in the market now!');
+                document.getElementById('sell-form').reset();
+                window.location.href = 'buy.html';
+            };
+            reader.readAsDataURL(imageInput.files[0]); // Convert the uploaded file to Base64
+        }
+    </script>
+    <!-- <script>
+        // clear all stored products and start afresh
+        localStorage.removeItem('products');
+        alert('All previous products have been removed. Start afresh!');
+    </script>  -->
+    
+</body>
+</html>

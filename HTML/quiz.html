@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Mythology Quiz</title>
+    <link rel="stylesheet" href="../CSS/quiz.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <nav>
+        <div class="logo">Native Roots</div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="marketplace.html">Store</a></li>
+            <li><a href="workshops.html">Workshops</a></li>
+            <li><a href="cultural-tours.html">Cultural Tours</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="traditionforum.html">Tradition Forum</a></li>
+            
+            <li><a href="login.html" id="loginbtn">Login</a></li>
+            <li><a href="signup.html" id="signupbtn">Signup</a></li>
+        </ul>
+    </nav>
+    
+    <div class="quiz-container">
+        <h1>Indian Mythology Quiz</h1>
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <h3>1. Who is considered the preserver in the Hindu Trinity?</h3>
+                <label><input type="radio" name="q1" value="Brahma"> Brahma</label><br>
+                <label><input type="radio" name="q1" value="Vishnu"> Vishnu</label><br>
+                <label><input type="radio" name="q1" value="Shiva"> Shiva</label><br>
+            </div>
+            
+            <!-- Question 2 -->
+            <div class="question">
+                <h3>2. In the Mahabharata, who was the charioteer of Arjuna?</h3>
+                <label><input type="radio" name="q2" value="Krishna"> Krishna</label><br>
+                <label><input type="radio" name="q2" value="Drona"> Drona</label><br>
+                <label><input type="radio" name="q2" value="Karna"> Karna</label><br>
+            </div>
+            
+            <!-- Question 3 -->
+            <div class="question">
+                <h3>3. The Ramayana is an epic based on the life of which deity?</h3>
+                <label><input type="radio" name="q3" value="Rama"> Rama</label><br>
+                <label><input type="radio" name="q3" value="Krishna"> Krishna</label><br>
+                <label><input type="radio" name="q3" value="Buddha"> Buddha</label><br>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <h3>4. Who is the goddess of wealth and prosperity in Hindu mythology?</h3>
+                <label><input type="radio" name="q4" value="Saraswati"> Saraswati</label><br>
+                <label><input type="radio" name="q4" value="Lakshmi"> Lakshmi</label><br>
+                <label><input type="radio" name="q4" value="Parvati"> Parvati</label><br>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        
+        <div id="result" style="display:none;">
+            <h2>Your Score: <span id="score"></span>/4</h2>
+            <button onclick="window.location.href='games.html'" class="start-btn">Go Back</button>
+        </div>
+    </div>
+
+    <script>
+        const quizForm = document.getElementById('quiz-form');
+        const resultContainer = document.getElementById('result');
+        const scoreDisplay = document.getElementById('score');
+
+        quizForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            let score = 0;
+            const answers = {
+                q1: 'Vishnu',
+                q2: 'Krishna',
+                q3: 'Rama',
+                q4: 'Lakshmi'
+            };
+
+            const formData = new FormData(quizForm);
+
+            for (let [question, correctAnswer] of Object.entries(answers)) {
+                if (formData.get(question) === correctAnswer) {
+                    score++;
+                }
+            }
+
+            quizForm.style.display = 'none';
+            resultContainer.style.display = 'block';
+            scoreDisplay.textContent = score;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Tours - Explore India</title>
+    <link rel="stylesheet" href="../CSS/cultural-tours.css">
+    <script>
+        function filterToursByState() {
+            // Get selected state value
+            const selectedState = document.getElementById("state").value;
+
+            // Get all tour items
+            const tourItems = document.querySelectorAll(".tour-item");
+
+            // Loop through each tour item
+            tourItems.forEach(function(item) {
+                // Check if the item's data-state matches the selected state
+                if (item.getAttribute("data-state") === selectedState || selectedState === "") {
+                    item.style.display = "block"; // Show matching items
+                } else {
+                    item.style.display = "none"; // Hide non-matching items
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="logo">Native Roots</div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="marketplace.html">Store</a></li>
+            <li><a href="workshops.html">Workshops</a></li>
+            <li><a href="cultural-tours.html">Cultural Tours</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="traditionforum.html">Tradition Forum</a></li>
+            
+            <li><a href="login.html" id="loginbtn">Login</a></li>
+            <li><a href="signup.html" id="signupbtn">Signup</a></li>
+        </ul>
+    </nav>
+    <div class="tours-container">
+        <h1>Cultural Tours</h1>
+        <form class="state-form">
+            <label for="state">Select Your State:</label>
+            <select id="state" name="state" onchange="filterToursByState()">
+                <option value="" disabled selected>Select your state</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="West Bengal">West Bengal</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Goa">Goa</option>
+            </select>
+        </form>
+
+        <div class="tours-grid">
+            <!-- Maharashtra -->
+            <div class="tour-item" data-state="Maharashtra">
+                <h2>Mumbai</h2>
+                <img src="https://tse4.mm.bing.net/th?id=OIP.0duFzuC6vhBdBlNl727k5AHaFj&pid=Api&P=0&h=180" alt="" width="200px" height="150px">
+                <p>Explore the vibrant city of Mumbai. Activities include visiting Gateway of India, Marine Drive, and Elephanta Caves.</p>
+                <div class="details">
+                    <button><a href="culturaltoursdesc.html">Know more details</a></button>
+                    <a href="https://youtu.be/Y8xTLgsSrTk" target="_blank">Watch  VR Video</a>  
+                </div>
+            </div>
+
+            <div class="tour-item" data-state="Maharashtra">
+                <h2>Pune</h2>
+                <img src="https://i.pinimg.com/originals/79/59/f5/7959f50032cfb790f1c7bc398deee52d.jpg" alt="" width="200px" height="150px">
+                <p>Discover Pune's rich heritage with visits to Shaniwarwada, Aga Khan Palace, and Sinhagad Fort.</p>
+                <div class="details">
+                    <button><a href="culturaltoursdesc.html">Know more details</a></button>
+                    <a href="https://youtu.be/8493u5yFwr0?si=QGX_lMb0c-7PKwQu" target="_blank">Watch Video</a>  
+                </div>
+            </div>
+
+            <!-- Karnataka -->
+            <div class="tour-item" data-state="Karnataka">
+                <h2>Bangalore</h2>
+                <img src=" https://tse2.mm.bing.net/th?id=OIP.gBTtn_fecAZhMmMZ39RtuwHaFj&pid=Api&P=0&h=180" alt="" width="200px" height="150px">
+                <p>Experience Bangalore with tours to Lalbagh Botanical Garden, Bangalore Palace, and Cubbon Park.</p>
+                <div class="details">
+                    <button><a href="culturaltoursdesc.html">Know more details</a></button>
+                    <a href="https://youtu.be/8493u5yFwr0?si=QGX_lMb0c-7PKwQu" target="_blank">Watch Video</a>
+                </div>
+            </div>
+
+            <div class="tour-item" data-state="Karnataka">
+                <h2>Mysore</h2>
+                <img src=" https://tse1.mm.bing.net/th?id=OIP.k5nwbQDiAXRolPrqed_XvgHaFj&pid=Api&P=0&h=180" alt="" width="200px" height="150px">
+                <p>Visit Mysore's famous landmarks including Mysore Palace, Chamundi Hill, and the Mysore Zoo.</p>
+                <div class="details">
+                    <button><a href="culturaltoursdesc.html">Know more details</a></button>
+                    <a href="https://youtu.be/8493u5yFwr0?si=QGX_lMb0c-7PKwQu" target="_blank">Watch Video</a>
+                </div>
+            </div>
+
+            <!-- Rajasthan -->
+            <div class="tour-item" data-state="Rajasthan">
+                <h2>Jaipur</h2>
+                <img src="https://tse4.mm.bing.net/th?id=OIP.5T0mx3CznQUsep_4GuRUxgHaE8&pid=Api&P=0&h=180" alt="" width="200px" height="150px">
+                <p>Explore the Pink City with tours to Amber Fort, City Palace, and Hawa Mahal.</p>
+                <div class="details">
+                    <button><a href="culturaltoursdesc.html">Know more details</a></button>
+                    <a href="https://youtu.be/8493u5yFwr0?si=QGX_lMb0c-7PKwQu" target="_blank">Watch Video</a>
+                </div>
+            </div>
+
+            <!-- Gujarat -->
+            <div class="tour-item" data-state="Gujarat">
+                <h2>Ahmedabad</h2>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.v9Es4hbJdL4obSEWHgUXuQHaFj&pid=Api&P=0&h=180" alt="" width="200px" height="150px">
+                <p>Explore Ahmedabad with tours to Sabarmati Ashram, Kankaria Lake, and the Adalaj Stepwell.</p>
+                <div class="details">
+                    <button><a href="culturaltoursdesc.html">Know more details</a></button>
+                    <a href="https://youtu.be/8493u5yFwr0?si=QGX_lMb0c-7PKwQu" target="_blank">Watch Video</a>
+                </div>
+            </div>
+
+            <div class="tour-item" data-state="Gujarat">
+                <h2>Kutch</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_-k4CZ7bfo2Rs4zb_ZSsF7OJpmRE84WbLBw&s" alt="" width="200px" height="150px">
+                <p>Experience the unique landscapes of Kutch with tours of the Rann of Kutch and Kutch Museum.</p>
+                <div class="details">
+                    <button><a href="culturaltoursdesc.html">Know more details</a></button>
+                    <a href="https://youtu.be/8493u5yFwr0?si=QGX_lMb0c-7PKwQu" target="_blank">Watch Video</a>
+                </div>
+            </div>
+
+            <!-- Punjab -->
+            <div class="tour-item" data-state="Punjab">
+                <h2>Amritsar</h2>
+                <img src="https://www.holidify.com/images/cmsuploads/compressed/229846793_20220223172129.jpg" alt="" width="200px" height="150px">
+                <p>Visit the Golden Temple, Jallianwala Bagh, and the Partition Museum.</p>
+                <div class="details">
+                    <button><a href="culturaltoursdesc.html">Know more details</a></button>
+                    <a href="https://youtu.be/8493u5yFwr0?si=QGX_lMb0c-7PKwQu" target = "_blank">Watch Video</a>
+                </div>
+            </div>
+
+            <!-- Other states' tours will go here -->
+
+        </div>
+    </div>
+</body>
+</html>
