@@ -40,6 +40,9 @@ It connects people with Indian traditions through immersive tours, interactive w
 ### 🏞️ Cultural Tours Section
 ![Cultural Tours Screenshot](images/culturaltours.png)
 
+### Quiz
+![Quiz page screenshot](images/quiz.png)
+
 ---
 
 ## 🔧 How to Run Locally
