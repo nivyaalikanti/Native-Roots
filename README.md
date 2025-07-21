@@ -51,6 +51,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/your-username/Native-Roots.git
+```
 
 Then open the project folder, and double-click on index.html to view it in your browser.
 Alternatively, use a Live Server extension in VS Code for a smoother development experience.
