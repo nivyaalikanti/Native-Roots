@@ -50,7 +50,7 @@ It connects people with Indian traditions through immersive tours, interactive w
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/Native-Roots.git
+git clone https://github.com/nivyaalikanti/Native-Roots.git
 ```
 
 Then open the project folder, and double-click on index.html to view it in your browser.
